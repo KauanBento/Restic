@@ -1,0 +1,243 @@
+body {
+    background-color: #ececec;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 1s;
+    /* Transição suave para a mudança de fundo */
+}
+
+body.dark {
+    background-color: #1c1c1c;
+    /* Cor de fundo no modo escuro */
+}
+
+.painel {
+    display: flex;
+    position: relative;
+    width: 55%;
+    height: 70%;
+    border-radius: 25px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    transition: 1s;
+    /* Transição suave para a mudança de fundo do painel */
+}
+
+.painel.dark {
+    background-color: #000000;
+    /* Cor de fundo no modo escuro */
+}
+
+.imagem {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login,
+.cadastro {
+    flex: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #3C8C03;
+}
+
+.cadastro {
+    display: none;
+    /* Oculta o formulário de cadastro por padrão */
+}
+
+.navegar {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    padding: 5px;
+    background-color: #ececec;
+    border-radius: 50px;
+    transition: 1s;
+    /* Transição suave para a mudança de fundo da navegação */
+}
+
+.navegar.dark {
+    background-color: #1c1c1c;
+    /* Cor de fundo da navegação no modo escuro */
+}
+
+#btn-login-log,
+#btn-login-cad,
+#btn-cadastro-log,
+#btn-cadastro-cad {
+    margin: 0 2px;
+}
+
+.login h4,
+.cadastro h4 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #3C8C03;
+    font-weight: bold;
+}
+
+.tema {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: #000000 solid 2px;
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tema .label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    transition: 1s;
+    /* Transição suave para a mudança de fundo do switch */
+}
+
+#check {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.bola {
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    left: 2px;
+}
+
+input {
+    color: #3C8C03;
+    border: none;
+    border-bottom: 2px solid #3C8C03;
+    border-radius: 0;
+    outline: none;
+    width: 100%;
+    transition: 1s;
+    /* Transição suave para a mudança de fundo dos inputs */
+}
+
+input.dark {
+    background-color: #000000;
+    /* Cor de fundo dos inputs no modo escuro */
+}
+
+.botao {
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #3C8C03;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2d6b01;
+}
+
+.esqueci_senha {
+    align-self: flex-end;
+    margin-right: 5px;
+    margin-top: 10px;
+    color: #3C8C03;
+}
+
+@media (max-width: 768px) {
+
+    /* Adaptação a telas menores */
+    .painel {
+        width: 85%;
+        flex-direction: column;
+        height: auto;
+        margin-top: 60%;
+    }
+
+    .imagem {
+        height: 200px;
+    }
+
+    .login,
+    .cadastro {
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .esqueci_senha {
+        align-self: center;
+    }
+
+    .navegar {
+        align-self: center;
+        width: 100%;
+    }
+
+    #btn-login-log,
+    #btn-login-cad,
+    #btn-cadastro-log,
+    #btn-cadastro-cad {
+        width: 50%;
+    }
+
+    .botao {
+        align-self: center;
+        width: 100%;
+    }
+
+    #botao-entrar,
+    #botao-cadastrar {
+        width: 100%;
+    }
+
+    label {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Adaptação a telas mobiles */
+    .painel {
+        width: 95%;
+    }
+
+    .login,
+    .cadastro {
+        padding: 15px;
+        border-radius: 0 0 25px 25px;
+    }
+}

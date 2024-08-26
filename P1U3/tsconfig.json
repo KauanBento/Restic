@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es6", // Define a versão do ECMAScript para a saída do JavaScript
+        "module": "commonjs", // Define o sistema de módulos a ser utilizado
+        "outDir": "./src", // Diretório de saída dos arquivos compilados
+        "rootDir": "./src", // Diretório raiz dos arquivos de entrada
+        "strict": true, // Habilita todas as verificações de tipo estritas
+        "esModuleInterop": true, // Habilita a interoperabilidade entre módulos ES e CommonJS
+        "skipLibCheck": true // Ignora a checagem de tipo dos arquivos de definição de biblioteca
+    },
+    "include": [
+        "src/**/*.ts" // Inclui todos os arquivos .ts na pasta src
+    ],
+    "exclude": [
+        "node_modules" // Exclui a pasta node_modules
+    ]
+}

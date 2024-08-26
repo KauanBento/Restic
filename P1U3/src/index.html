@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/estilo.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="painel">
+        <!-- Seção de imagem -->
+        <div class="imagem">
+            <img id="imagem" src="img/Login.png" alt="Imagem de login">
+        </div>
+
+        <!-- Seção de tema para alternar entre modo claro e escuro -->
+        <div class="tema">
+            <input type="checkbox" class="checkbox" id="check" />
+            <label class="label" for="check"></label>
+            <div class="bola"></div>
+        </div>
+
+        <!-- Formulário de login -->
+        <div class="login">
+            <h4>Bem-vindo ao login</h4>
+            <div class="navegar">
+                <button type="button" id="btn-login-log">Login</button>
+                <button type="button" id="btn-login-cad">Cadastro</button>
+            </div>
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email" name="email" autocomplete="on" required>
+            <label for="password">Senha</label>
+            <input class="input" type="password" id="password" name="password" required>
+            <a class="esqueci_senha" href="#">Esqueci a senha</a>
+            <div class="botao">
+                <button type="submit" id="botao-entrar">Entrar</button>
+            </div>
+        </div>
+
+        <!-- Formulário de cadastro -->
+        <div class="cadastro">
+            <h4>Bem-vindo ao cadastro</h4>
+            <div class="navegar">
+                <button type="button" id="btn-cadastro-log">Login</button>
+                <button type="button" id="btn-cadastro-cad">Cadastro</button>
+            </div>
+            <label for="nome">Nome Completo</label>
+            <input class="input" type="text" id="nome" name="nome" required>
+            <label for="cep">CEP</label>
+            <input class="input" type="text" id="cep" name="cep" required>
+            <label for="cidade">Cidade</label>
+            <input class="input" type="text" id="cidade" name="cidade" required>
+            <label for="bairro">Bairro</label>
+            <input class="input" type="text" id="bairro" name="bairro" required>
+            <label for="rua">Rua</label>
+            <input class="input" type="text" id="rua" name="rua" required>
+            <label for="email-cadastro">Email</label>
+            <input class="input" type="email" id="email-cadastro" name="email" autocomplete="on" required>
+            <label for="password-cadastro">Senha</label>
+            <input class="input" type="password" id="password-cadastro" name="password" required>
+            <div class="botao">
+                <button type="submit" id="botao-cadastrar">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script/TypeScript.js"></script>
+</body>
+
+</html>
